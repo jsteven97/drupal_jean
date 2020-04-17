@@ -1,0 +1,21 @@
+uuid: b7c48b68-81bd-4d30-b1ee-f3c3083b370c
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_siglascurso
+field_name: field_siglascurso
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

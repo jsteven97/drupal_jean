@@ -1,0 +1,27 @@
+uuid: c0be1dc2-76e5-4996-bb57-11a27d0ae0e9
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.articulo.field_imagen_articulo
+    - field.field.node.articulo.field_imagen_dos
+    - field.field.node.articulo.field_titulo
+    - node.type.articulo
+  module:
+    - user
+id: node.articulo.teaser
+targetEntityType: node
+bundle: articulo
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_imagen_articulo: true
+  field_imagen_dos: true
+  field_titulo: true
+  langcode: true

@@ -1,0 +1,8 @@
+uuid: 0467075f-9235-440f-82a5-875691d03d7b
+langcode: es
+status: true
+dependencies: {  }
+id: cursos
+label: Cursos
+description: 'Es un menu respecto a los cursos'
+locked: false

@@ -1,0 +1,11 @@
+uuid: 288f62e7-bd01-4f1a-983f-51e68a8e5f40
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.para_ver_videos
+id: media.para_ver_videos
+target_entity_type_id: media
+target_bundle: para_ver_videos
+default_langcode: site_default
+language_alterable: false

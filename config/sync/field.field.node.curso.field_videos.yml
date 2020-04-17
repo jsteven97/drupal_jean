@@ -1,0 +1,29 @@
+uuid: 2afafea8-205c-40f1-a9f8-cdcba82f8747
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_videos
+    - media.type.para_ver_videos
+    - node.type.curso
+id: node.curso.field_videos
+field_name: field_videos
+entity_type: node
+bundle: curso
+label: Videos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      para_ver_videos: para_ver_videos
+    sort:
+      field: status
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: 89db8730-8add-4015-afb8-ceeb7fa2814c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_siglascurso
+    - node.type.curso
+id: node.curso.field_siglascurso
+field_name: field_siglascurso
+entity_type: node
+bundle: curso
+label: SiglasCurso
+description: 'Las siglas del curso'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

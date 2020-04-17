@@ -1,0 +1,30 @@
+uuid: 82b26317-84dc-4291-9ec5-bcddb5ad66bd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.media.imagenes.field_media_image_1
+    - image.style.large
+    - media.type.imagenes
+  module:
+    - image
+id: media.imagenes.default
+targetEntityType: media
+bundle: imagenes
+mode: default
+content:
+  field_media_image_1:
+    label: visually_hidden
+    weight: 0
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

@@ -1,0 +1,11 @@
+uuid: e10486cd-fa2c-45e8-b194-52fcb7a3dc04
+langcode: es
+status: true
+dependencies:
+  config:
+    - media.type.imagenes
+id: media.imagenes
+target_entity_type_id: media
+target_bundle: imagenes
+default_langcode: site_default
+language_alterable: false

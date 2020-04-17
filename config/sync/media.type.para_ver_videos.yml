@@ -1,0 +1,18 @@
+uuid: 144be87b-bcc6-4c80-95ca-4997cda0d0a0
+langcode: es
+status: true
+dependencies: {  }
+id: para_ver_videos
+label: 'Para ver videos'
+description: 'Este tipo es para ver videos ak7'
+source: 'oembed:video'
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  thumbnails_directory: 'public://oembed_thumbnails'
+  providers:
+    - YouTube
+    - Vimeo
+  source_field: field_media_oembed_video_1
+field_map:
+  title: name

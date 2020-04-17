@@ -1,0 +1,8 @@
+uuid: 6f050b32-0d80-4ce4-9de3-a0c5ecf41554
+langcode: es
+status: true
+dependencies: {  }
+name: TipoCurso
+vid: tipocurso
+description: 'Es el tipo de curso que es '
+weight: 0

@@ -1,0 +1,18 @@
+uuid: 36ddab39-082c-47aa-8dc7-e487905eb246
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Curso
+type: curso
+description: 'Cursos de la universidad ak7'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

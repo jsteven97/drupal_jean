@@ -1,0 +1,11 @@
+uuid: 2173a4f7-7868-4576-8b84-b3ec08431020
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.centro_educativo
+id: node.centro_educativo
+target_entity_type_id: node
+target_bundle: centro_educativo
+default_langcode: site_default
+language_alterable: false

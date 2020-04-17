@@ -1,0 +1,11 @@
+uuid: 95c8d322-de41-4b98-8bc5-9832bccdefe6
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipocurso
+id: taxonomy_term.tipocurso
+target_entity_type_id: taxonomy_term
+target_bundle: tipocurso
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,12 @@
+uuid: 9503f365-45d6-4055-b7ef-fd51aeab9a7d
+langcode: es
+status: true
+dependencies: {  }
+id: contact_me
+label: 'Contact me'
+recipients:
+  - admin@admin.com
+reply: 'Hemos enviado el arroz'
+weight: 0
+message: 'Hola quisiera contactarme con vosotros'
+redirect: /node/1

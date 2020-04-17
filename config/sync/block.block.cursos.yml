@@ -1,0 +1,25 @@
+uuid: 29602e8f-c069-4481-84ff-0262edce4fe7
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.cursos
+  module:
+    - system
+  theme:
+    - bartik
+id: cursos
+theme: bartik
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'system_menu_block:cursos'
+settings:
+  id: 'system_menu_block:cursos'
+  label: Cursos
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

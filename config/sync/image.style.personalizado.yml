@@ -1,0 +1,15 @@
+uuid: 873e3493-7392-46c5-bed9-979ea3d9a159
+langcode: es
+status: true
+dependencies: {  }
+name: personalizado
+label: Personalizado
+effects:
+  996cd695-49e6-45f4-9912-2c80a30029fe:
+    uuid: 996cd695-49e6-45f4-9912-2c80a30029fe
+    id: image_scale
+    weight: 1
+    data:
+      width: 760
+      height: 420
+      upscale: true

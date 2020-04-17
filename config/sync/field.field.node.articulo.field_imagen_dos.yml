@@ -1,0 +1,28 @@
+uuid: 3ca5bd89-e67e-4c90-b7a7-acca806dfc69
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_dos
+    - media.type.imagenes
+    - node.type.articulo
+id: node.articulo.field_imagen_dos
+field_name: field_imagen_dos
+entity_type: node
+bundle: articulo
+label: Autor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      imagenes: imagenes
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

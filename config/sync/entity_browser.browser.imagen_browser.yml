@@ -1,0 +1,34 @@
+uuid: e7035d72-32cc-4893-8029-497a693db2f9
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.archive
+    - views.view.media_entity_browser
+  module:
+    - views
+name: imagen_browser
+label: Imagen_browser
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: view
+selection_display_configuration:
+  view: archive
+  view_display: default
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  74d07051-2bb9-4377-a41d-537d5767122f:
+    settings:
+      view: media_entity_browser
+      view_display: media_browser_all
+      submit_text: 'Select entities'
+      auto_select: true
+    uuid: 74d07051-2bb9-4377-a41d-537d5767122f
+    weight: 1
+    label: view
+    id: view

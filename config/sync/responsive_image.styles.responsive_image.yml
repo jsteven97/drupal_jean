@@ -1,0 +1,30 @@
+uuid: a4746453-6481-46ab-8048-1361af3f4fc6
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.large
+    - image.style.medium
+    - image.style.thumbnail
+  theme:
+    - bartik
+id: responsive_image
+label: Responsive_image
+image_style_mappings:
+  -
+    breakpoint_id: bartik.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large
+  -
+    breakpoint_id: bartik.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: medium
+  -
+    breakpoint_id: bartik.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: thumbnail
+breakpoint_group: bartik
+fallback_image_style: thumbnail

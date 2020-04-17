@@ -1,0 +1,28 @@
+uuid: fb5b4f43-eb0b-449f-b6f1-40bb099ddcef
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fotos
+    - media.type.imagenes
+    - node.type.centro_educativo
+id: node.centro_educativo.field_fotos
+field_name: field_fotos
+entity_type: node
+bundle: centro_educativo
+label: Fotos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      imagenes: imagenes
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

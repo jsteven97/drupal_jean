@@ -1,0 +1,30 @@
+uuid: 49c673b6-3ae4-49ab-a9dc-cafa52585d6e
+langcode: es
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+id: node.field_fotocentro
+field_name: field_fotocentro
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,65 @@
+uuid: b4b822d4-c7f1-410e-8b1d-96fd5de2b193
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.curso.body
+    - field.field.node.curso.field_categoria
+    - field.field.node.curso.field_nombrecurso
+    - field.field.node.curso.field_siglascurso
+    - field.field.node.curso.field_videos
+    - node.type.curso
+  module:
+    - text
+    - user
+id: node.curso.default
+targetEntityType: node
+bundle: curso
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_categoria:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_nombrecurso:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_siglascurso:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_videos:
+    type: entity_reference_entity_view
+    weight: 105
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

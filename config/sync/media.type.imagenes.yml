@@ -1,0 +1,14 @@
+uuid: ab1e67a6-8d9b-405c-a79e-d71ecaa5223d
+langcode: es
+status: true
+dependencies: {  }
+id: imagenes
+label: Imagenes
+description: 'Aqui suba lo que quiera'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image_1
+field_map:
+  mimetype: name
