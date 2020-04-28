@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.articulo.field_imagen_articulo
     - field.field.node.articulo.field_imagen_dos
+    - field.field.node.articulo.field_texto_parrafo
     - field.field.node.articulo.field_titulo
     - node.type.articulo
   module:
@@ -23,5 +24,6 @@ content:
 hidden:
   field_imagen_articulo: true
   field_imagen_dos: true
+  field_texto_parrafo: true
   field_titulo: true
   langcode: true

@@ -1,0 +1,30 @@
+uuid: f08ae12b-6da6-4469-a171-2c70b1da14c5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_resena_img
+    - media.type.image
+    - media.type.imagenes
+    - paragraphs.paragraphs_type.resena
+id: paragraph.resena.field_resena_img
+field_name: field_resena_img
+entity_type: paragraph
+bundle: resena
+label: reseña_img
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      imagenes: imagenes
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

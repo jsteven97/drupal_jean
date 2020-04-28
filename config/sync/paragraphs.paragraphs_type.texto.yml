@@ -1,0 +1,10 @@
+uuid: 879b6462-5bba-4e9d-9d30-b9eecae47cc5
+langcode: es
+status: true
+dependencies: {  }
+id: texto
+label: Texto
+icon_uuid: null
+icon_default: null
+description: 'Este texto se mostrará en la página '
+behavior_plugins: {  }

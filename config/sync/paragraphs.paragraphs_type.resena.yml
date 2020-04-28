@@ -1,0 +1,10 @@
+uuid: f193f445-74d4-49df-ac25-adb1f277da3c
+langcode: es
+status: true
+dependencies: {  }
+id: resena
+label: Reseña
+icon_uuid: null
+icon_default: null
+description: 'Esto es una reseña'
+behavior_plugins: {  }

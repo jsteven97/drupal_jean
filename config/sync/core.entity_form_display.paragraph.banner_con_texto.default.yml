@@ -1,0 +1,53 @@
+uuid: e8f9e845-f9fa-4bfa-b9e3-d9c8fe13e230
+langcode: es
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.media_entity_browser_modal
+    - field.field.paragraph.banner_con_texto.field_parrafo_banner
+    - field.field.paragraph.banner_con_texto.field_texto_banner
+    - field.field.paragraph.banner_con_texto.field_titulo_banner
+    - paragraphs.paragraphs_type.banner_con_texto
+  module:
+    - entity_browser
+    - text
+id: paragraph.banner_con_texto.default
+targetEntityType: paragraph
+bundle: banner_con_texto
+mode: default
+content:
+  field_parrafo_banner:
+    type: entity_browser_entity_reference
+    weight: 0
+    settings:
+      entity_browser: media_entity_browser_modal
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_replace: false
+      open: false
+      field_widget_display_settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_texto_banner:
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_titulo_banner:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+hidden:
+  created: true
+  status: true

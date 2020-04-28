@@ -1,0 +1,11 @@
+uuid: 73f19097-eb61-4dd7-b28a-022b8f43c1f0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.comentarios
+id: node.comentarios
+target_entity_type_id: node
+target_bundle: comentarios
+default_langcode: site_default
+language_alterable: false

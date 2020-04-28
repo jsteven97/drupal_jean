@@ -1,0 +1,21 @@
+uuid: 22a32322-81ac-4a0c-8165-eb3a99d026d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_comentario
+    - paragraphs.paragraphs_type.resena
+  module:
+    - text
+id: paragraph.resena.field_comentario
+field_name: field_comentario
+entity_type: paragraph
+bundle: resena
+label: comentario
+description: "Escriba aqui su reseña\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

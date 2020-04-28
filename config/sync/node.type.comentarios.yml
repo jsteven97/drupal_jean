@@ -1,0 +1,18 @@
+uuid: 6c786759-9e3d-443e-beff-f90293a5e1c4
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Comentarios
+type: comentarios
+description: 'Estos son los comentarios'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,21 @@
+uuid: 9171296c-d3e2-492c-a89c-1efd95539621
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_autor_resena
+    - paragraphs.paragraphs_type.resena
+  module:
+    - text
+id: paragraph.resena.field_autor_resena
+field_name: field_autor_resena
+entity_type: paragraph
+bundle: resena
+label: autor_reseña
+description: 'autor de la reseña'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

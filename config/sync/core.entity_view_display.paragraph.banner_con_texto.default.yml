@@ -1,0 +1,40 @@
+uuid: 4a6ec0c1-e99b-4095-a292-1fb9062a6af3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner_con_texto.field_parrafo_banner
+    - field.field.paragraph.banner_con_texto.field_texto_banner
+    - field.field.paragraph.banner_con_texto.field_titulo_banner
+    - paragraphs.paragraphs_type.banner_con_texto
+  module:
+    - text
+id: paragraph.banner_con_texto.default
+targetEntityType: paragraph
+bundle: banner_con_texto
+mode: default
+content:
+  field_parrafo_banner:
+    type: entity_reference_entity_view
+    weight: 2
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_texto_banner:
+    weight: 1
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_titulo_banner:
+    weight: 0
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

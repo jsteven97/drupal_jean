@@ -1,0 +1,36 @@
+uuid: 34f95d08-632e-4f8b-965d-45201007349a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_texto_parrafo
+    - node.type.articulo
+    - paragraphs.paragraphs_type.texto
+    - paragraphs.paragraphs_type.texto_imagen
+  module:
+    - entity_reference_revisions
+id: node.articulo.field_texto_parrafo
+field_name: field_texto_parrafo
+entity_type: node
+bundle: articulo
+label: Texto_parrafo
+description: 'Esto es para escribir respecto al articulo'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      texto: texto
+      texto_imagen: texto_imagen
+    target_bundles_drag_drop:
+      texto:
+        enabled: true
+        weight: 3
+      texto_imagen:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

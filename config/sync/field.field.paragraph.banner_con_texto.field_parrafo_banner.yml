@@ -1,0 +1,30 @@
+uuid: 58d67106-7086-4cd1-b11c-d74f1d6ec4e2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_parrafo_banner
+    - media.type.image
+    - media.type.imagenes
+    - paragraphs.paragraphs_type.banner_con_texto
+id: paragraph.banner_con_texto.field_parrafo_banner
+field_name: field_parrafo_banner
+entity_type: paragraph
+bundle: banner_con_texto
+label: imagen_banner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      imagenes: imagenes
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

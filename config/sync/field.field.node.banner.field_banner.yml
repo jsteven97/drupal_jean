@@ -1,0 +1,37 @@
+uuid: 5c370c48-862a-4090-b655-e97bbcfb6906
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner
+    - node.type.banner
+    - paragraphs.paragraphs_type.banner_con_texto
+  module:
+    - entity_reference_revisions
+id: node.banner.field_banner
+field_name: field_banner
+entity_type: node
+bundle: banner
+label: Banner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      banner_con_texto: banner_con_texto
+    target_bundles_drag_drop:
+      banner_con_texto:
+        enabled: true
+        weight: 4
+      texto:
+        weight: 5
+        enabled: false
+      texto_imagen:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,32 @@
+uuid: 357d076e-256e-4a09-9f1d-38bea0142588
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.texto_imagen.field_imagen_parrafo
+    - field.field.paragraph.texto_imagen.field_parrafo
+    - paragraphs.paragraphs_type.texto_imagen
+  module:
+    - text
+id: paragraph.texto_imagen.default
+targetEntityType: paragraph
+bundle: texto_imagen
+mode: default
+content:
+  field_imagen_parrafo:
+    type: entity_reference_entity_view
+    weight: 1
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_parrafo:
+    weight: 0
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

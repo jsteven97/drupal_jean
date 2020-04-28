@@ -1,0 +1,42 @@
+uuid: 66a807c3-6057-4099-8696-9a6b1e85d21d
+langcode: es
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.media_entity_browser_modal
+    - field.field.paragraph.texto_imagen.field_imagen_parrafo
+    - field.field.paragraph.texto_imagen.field_parrafo
+    - paragraphs.paragraphs_type.texto_imagen
+  module:
+    - entity_browser
+    - text
+id: paragraph.texto_imagen.default
+targetEntityType: paragraph
+bundle: texto_imagen
+mode: default
+content:
+  field_imagen_parrafo:
+    type: entity_browser_entity_reference
+    weight: 1
+    settings:
+      entity_browser: media_entity_browser_modal
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_replace: false
+      open: false
+      field_widget_display_settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_parrafo:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

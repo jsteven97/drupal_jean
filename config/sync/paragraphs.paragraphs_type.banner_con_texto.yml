@@ -1,0 +1,10 @@
+uuid: 057c74ed-aa98-4c8f-aa06-89f78543ee7f
+langcode: es
+status: true
+dependencies: {  }
+id: banner_con_texto
+label: 'banner con texto'
+icon_uuid: null
+icon_default: null
+description: 'Esto es un banner con texto'
+behavior_plugins: {  }

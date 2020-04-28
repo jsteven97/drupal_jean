@@ -1,0 +1,21 @@
+uuid: 5cab48f0-37ba-4042-a39b-73129d2e21f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_parrafo
+    - paragraphs.paragraphs_type.texto_imagen
+  module:
+    - text
+id: paragraph.texto_imagen.field_parrafo
+field_name: field_parrafo
+entity_type: paragraph
+bundle: texto_imagen
+label: parrafo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

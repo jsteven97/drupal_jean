@@ -1,0 +1,28 @@
+uuid: 21ff4eb3-568c-4007-a4b0-ed0c207d19f8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_imagen_parrafo
+    - media.type.imagenes
+    - paragraphs.paragraphs_type.texto_imagen
+id: paragraph.texto_imagen.field_imagen_parrafo
+field_name: field_imagen_parrafo
+entity_type: paragraph
+bundle: texto_imagen
+label: imagen_parrafo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      imagenes: imagenes
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

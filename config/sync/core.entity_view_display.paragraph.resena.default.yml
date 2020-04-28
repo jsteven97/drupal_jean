@@ -1,0 +1,40 @@
+uuid: 2c60715b-c0b2-4dbc-aba4-264ff1dd5ba6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.resena.field_autor_resena
+    - field.field.paragraph.resena.field_comentario
+    - field.field.paragraph.resena.field_resena_img
+    - paragraphs.paragraphs_type.resena
+  module:
+    - text
+id: paragraph.resena.default
+targetEntityType: paragraph
+bundle: resena
+mode: default
+content:
+  field_autor_resena:
+    weight: 2
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_comentario:
+    weight: 1
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_resena_img:
+    type: entity_reference_entity_view
+    weight: 0
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,19 @@
+uuid: dad15fa5-f443-4c08-b001-bf41f28a1962
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_comentario
+field_name: field_comentario
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
